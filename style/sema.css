@@ -44,9 +44,7 @@ body {
 	float: left;
 }
 
-.header-empty {
-	height: 60px;
-}
+.header-empty { height: 60px; }
 
 .wrapper {
 	width: 950px;
@@ -57,10 +55,7 @@ body {
 }
 
 /* @border-radius all */
-li, li:hover, nav, .navigator, .page,
-.mainPost {
-	border-radius: 4px;
-}
+li, li:hover, nav, .navigator, .page, .mainPost { border-radius: 4px; }
 
 .navigator {
 	width: 188px;
@@ -102,13 +97,9 @@ li:hover {
 	box-shadow: 2px 2px 4px rgb(160, 200, 160);
 }
 
-#one_li {
-	margin-top: 0;
-}
+#one_li { margin-top: 0; }
 
-.navBottom {
-	margin: 10px;
-}
+.navBottom { margin: 10px; }
 
 .page {
 	background-color: rgb(250, 250, 250);
@@ -125,6 +116,76 @@ li:hover {
 	margin-left: 200px;
 }
 
+#pText {
+	width: 100%;
+	text-align: justify;
+}
+
+/*! @spoiler start */
+/* Значок заголовки спойлера */
+/* Не раскрытый спойлер (значок) */
+.spoiler > input + label:after {
+	content: "▶";
+	float: inline-start;
+	margin-right: 8px;
+}
+/* Раскрытый спойлер (значок)*/
+.spoiler > input:checked + label:after {
+	content: "▼";
+	float: inline-start;
+	margin-right: 8px;
+}
+
+/* Не раскрытый спойлер (заголовка) - false */
+.spoiler > input + label,
+.spoiler > .spoiler_body {
+	background: white;
+	border: 1px solid lightgray;
+	box-shadow: 2px 2px 4px lightgrey;
+	border-radius: 4px;
+	
+	width: 100%;
+	padding: 5px 15px;
+	
+	overflow: hidden;
+	box-sizing: border-box;
+	display: block;
+	cursor: pointer;
+}
+
+/* Рскрытый спойлер (заголовка) - true */
+.spoiler > input:checked + label {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	
+	margin: 0;
+	cursor: pointer;
+}
+
+/* Параметры спойлера */
+.spoiler > input:checked + label + .spoiler_body { display: block; }
+.spoiler > input + label + .spoiler_body, .spoiler > input { display: none; }
+.spoiler { margin: 10px 0 0 }
+
+/* Раскрытый спойлер (скрытый текст) */
+.spoiler > .spoiler_body {
+	background: white;
+	
+	border-top: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	
+	margin: 0;
+	padding-top: 8px;
+	padding-left: 16px;
+	padding-bottom: 8px;
+	
+	cursor: default;
+}
+/*! @spoiler end */
+
 .li_h1 {
 	border-bottom: 1px solid lightgray;
 	font-weight: 500;
@@ -135,8 +196,8 @@ li:hover {
 }
 
 .mainPage {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .mainPage a:link,
@@ -173,7 +234,7 @@ li:hover {
 }
 
 #main-post1 {
-	background-image: url(image/sema.jpeg);
+	background-image: url(image/semena.jpeg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 
