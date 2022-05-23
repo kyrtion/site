@@ -213,6 +213,10 @@ li:hover {
 	padding-bottom: 4px;
 }
 
+#mText {
+	list-style-type: circle;
+}
+
 /*! @spoiler end */
 
 .li_h1 {
