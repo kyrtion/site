@@ -249,11 +249,11 @@ li:hover {
 #main-post6 {
 	background-image: url(image/tree2.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0 -170px;
+	background-size: 250%;
+	background-position: -180px -8px;
 	
-	width: 712px;
-	height: 180px;
+	width: 250px;
+	height: 378px;
 
 	float: inline-start;
 
